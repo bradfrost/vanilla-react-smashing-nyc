@@ -1,0 +1,22 @@
+@import '../../css/scss/abstracts/variables';
+@import '../../css/scss/abstracts/mixins';
+
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+/**
+ * Global block at the top of each page containing the navigation, logo, and other potential utility nav
+ */
+.c-header {
+  background: #ddd;
+  padding: 1rem 0;
+  margin-bottom: $spacing;
+}
+
+.c-header__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+  gap: $spacing;
+}

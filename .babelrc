@@ -1,0 +1,10 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "env": {
+    "distribution": {
+      "plugins": [
+        ["babel-plugin-transform-rename-import", { "original": "^(.+?)\\.scss$", "replacement": "$1.css" }]
+      ]
+    }
+  }
+}

@@ -1,0 +1,128 @@
+@import '../../css/scss/abstracts/variables';
+@import '../../css/scss/abstracts/mixins';
+
+/*------------------------------------*\
+    #LAYOUT GRID
+\*------------------------------------*/
+
+/**
+ * 1) Layout Grid is a flexible component
+ *    allowing for a variety of responsive layout
+ *    components
+ */
+.l-grid {
+  display: grid;
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+}
+
+.l-grid--spacing-none {
+  grid-row-gap: 0;
+  grid-column-gap: 0;
+}
+
+.l-grid--spacing-small {
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+}
+
+.l-grid--spacing-large {
+  grid-row-gap: 3rem;
+  grid-column-gap: 3rem;
+}
+
+.l-grid--spacing-xl {
+  grid-row-gap: 4rem;
+  grid-column-gap: 4rem;
+}
+
+.l-grid--row-spacing-none {
+  grid-row-gap: 0;
+}
+
+.l-grid--row-spacing-small {
+  grid-row-gap: 1rem;
+}
+
+.l-grid--row-spacing-large {
+  grid-row-gap: 2rem;
+}
+
+.l-grid--row-spacing-xl {
+  grid-row-gap: 3rem;
+}
+
+.l-grid--column-spacing-none {
+  grid-column-gap: 0;
+}
+
+.l-grid--column-spacing-small {
+  grid-column-gap: 1rem;
+}
+
+.l-grid--column-spacing-large {
+  grid-column-gap: 2rem;
+}
+
+.l-grid--column-spacing-xl {
+  grid-column-gap: 3rem;
+}
+
+/**
+ * 1 to 3 grid pattern
+ * 1) This pattern stacks grid items on top of each
+ *    other until they can sit comfortably beside each other 
+ */
+.l-grid--1-to-3up {
+  @media all and (min-width: $bp-large) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.l-grid--side-by-side {
+  grid-template-columns: 1fr 1fr; /* 2 */
+}
+
+/**
+ * 2up grid pattern
+ * 1) This pattern stacks grid items on top of each
+ *    other until they can sit comfortably beside each other 
+ * 2) TODO: Grid template columns is hard-coded to account for homepage ads
+ *    Make more flexible
+ */
+.l-grid--2up {
+  @media all and (min-width: $bp-med) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/**
+ * 3up grid pattern
+ * 1) This pattern stacks grid items on top of each
+ *    other until they can sit comfortably beside each other 
+ */
+.l-grid--3up {
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(auto-fill, 1fr);
+
+  @media all and (min-width: $bp-med) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media all and (min-width: $bp-large) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/**
+ * 4up grid pattern
+ * 1) This pattern stacks grid items on top of each
+ *    other until they can sit comfortably beside each other 
+ */
+.l-grid--4up {
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(auto-fill, 250px);
+  justify-content: space-between;
+}

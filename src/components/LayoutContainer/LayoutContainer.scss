@@ -1,0 +1,21 @@
+@import '../../css/scss/abstracts/variables';
+@import '../../css/scss/abstracts/mixins';
+
+/*------------------------------------*\
+    #LAYOUT CONTAINER
+\*------------------------------------*/
+
+/**
+ * Layout Container
+ * 1) Caps the width of the content to the maximum width
+ *    and centers the container
+ * 2) The layout container can be combined with other
+ *    component-specific classes (i.e. atm-c-header__inner)
+ */
+.l-container {
+  max-width: $l-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $spacing;
+  padding-right: $spacing;
+}

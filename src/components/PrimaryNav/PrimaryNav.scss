@@ -1,0 +1,35 @@
+@import '../../css/scss/abstracts/variables';
+@import '../../css/scss/abstracts/mixins';
+
+/*------------------------------------*\
+    #PRIMARY NAVIGATION
+\*------------------------------------*/
+
+/**
+ * Primary navigation existing in the header and maybe the footer
+ * 1) The outer <nav> wrapper of the primary navigation
+ */
+.c-primary-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+/**
+ * Primary nav list
+ * 1) The list of nav items
+ */
+.c-primary-nav__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Primary nav item
+ * 1) individual list item 
+ */
+.c-primary-nav__item {
+  margin-right: 2rem;
+}

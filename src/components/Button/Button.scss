@@ -1,0 +1,39 @@
+@import '../../css/scss/abstracts/variables';
+@import '../../css/scss/abstracts/mixins';
+
+/*------------------------------------*\
+    #BUTTON
+\*------------------------------------*/
+
+/**
+ * 1) Button or link that has functionality to it
+ */
+.c-btn {
+  display: flex;
+  background: #333;
+  color: #fff;
+  border: 0;
+  padding: $spacing;
+}
+
+/**
+ * Secondary button
+ * 1) Different button style 
+ */
+.c-btn--secondary {
+  background: #eee;
+  color: #222;
+  border: 1px solid #eee;
+}
+
+.c-btn__icon {
+  fill: #fff;
+}
+
+.c-btn__text + .c-btn__icon {
+  margin-left: 0.5rem;
+}
+
+.c-btn__icon + .c-btn__text {
+  margin-left: 0.5rem;
+}

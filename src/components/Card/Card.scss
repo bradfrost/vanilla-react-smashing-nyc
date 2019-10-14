@@ -1,0 +1,16 @@
+@import '../../css/scss/abstracts/variables';
+@import '../../css/scss/abstracts/mixins';
+
+/*------------------------------------*\
+    #CARD
+\*------------------------------------*/
+
+.c-card {
+  border: 1px solid $color-neutral-gray-50;
+  padding: 1rem;
+}
+
+.c-card--dark {
+  background: #000;
+  color: #fff;
+}

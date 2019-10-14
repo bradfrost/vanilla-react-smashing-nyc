@@ -1,0 +1,20 @@
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import { Header } from '../../components/Header/Header';
+import { Footer } from '../../components/Footer/Footer';
+
+export class {{pascalCase name}} extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Header />
+
+        <main role='main'>
+          <div className="fpo">Content</div>
+        </main>
+
+        <Footer />
+      </React.Fragment>
+    );
+  }
+}

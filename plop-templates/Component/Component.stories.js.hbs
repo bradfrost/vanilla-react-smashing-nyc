@@ -1,0 +1,17 @@
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { jsxDecorator } from 'storybook-addon-jsx';
+
+
+import {{pascalCase name}} from './{{pascalCase name}}';
+
+let module;
+let stories = storiesOf('Molecules/Category/{{pascalCase name}}', module);
+
+stories.addDecorator(jsxDecorator);
+
+stories.add('Default', () => (
+  <{{pascalCase name}}>
+    Hello world
+  </{{pascalCase name}}>
+));

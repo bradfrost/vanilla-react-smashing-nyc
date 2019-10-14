@@ -1,0 +1,13 @@
+d/*------------------------------------*\
+    #GRID ITEM
+\*------------------------------------*/
+/**
+ * 1) Direct child of l-grid
+ */
+.l-grid__item {
+  width: 100%;
+
+  &.l-grid__item--span-2 {
+    grid-column: 1 / -1;
+  }
+}

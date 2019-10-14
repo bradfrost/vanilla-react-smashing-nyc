@@ -1,0 +1,63 @@
+{
+  "name": "vanilla-react",
+  "version": "2.0.0",
+  "scripts": {
+    "start": "npm run storybook",
+    "build": "npm run dist",
+    "prepare": "npm run dist",
+    "build:js": "babel src --out-dir dist --copy-files",
+    "build:css": "node-sass --output-style compressed -o dist src && postcss dist/components/**/*.css --use autoprefixer --replace",
+    "build:icons": "svg-sprite-generate -d src/icons/ -o src/components/Icon/icons.svg",
+    "storybook": "run-s build:icons && start-storybook -p 9009",
+    "build-storybook": "run-s && build-storybook -o storybook",
+    "dist": "cross-env BABEL_ENV=distribution run-s dist.clear dist.build dist.clean",
+    "dist.clear": "del-cli dist",
+    "dist.build": "npm-run-all --parallel build:css build:icons build:js",
+    "dist.clean": "del-cli dist/**/*.stories.js dist/components/**/*.scss",
+    "plop": "plop component"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "classnames": "^2.2.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.2.3",
+    "@storybook/addon-knobs": "^5.2.3",
+    "@storybook/addon-links": "^5.2.3",
+    "@storybook/addons": "^5.2.3",
+    "@storybook/react": "^5.2.3",
+    "autoprefixer": "^9.5.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-rename-import": "^2.3.0",
+    "cross-env": "^6.0.0",
+    "css-loader": "^3.2.0",
+    "del-cli": "^1.1.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
+    "make-dir-cli": "^2.0.0",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^5.2.0",
+    "plop": "^2.4.0",
+    "postcss-cli": "^6.1.2",
+    "prettier": "^1.17.1",
+    "sass-loader": "^8.0.0",
+    "scsstojson": "^1.0.2",
+    "storybook-addon-jsx": "^7.1.6",
+    "style-loader": "^1.0.0",
+    "svg-sprite-generator": "0.0.7",
+    "webpack-concat-plugin": "^3.0.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

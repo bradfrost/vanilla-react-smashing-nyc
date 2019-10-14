@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #BODY
+\*------------------------------------*/
+
+/**
+ * Body base styles
+ * 1) Set the body element's height to at least 100vh of the viewport.
+ *    This is used to achieve a sticky footer
+ * 2) Prevent Mobile Safari from scaling up text: https://blog.55minutes.com/2012/04/iphone-text-resizing/
+ */
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: sans-serif;
+	background: #fff;
+}

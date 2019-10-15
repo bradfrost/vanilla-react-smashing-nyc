@@ -11,11 +11,7 @@ export class Button extends Component {
     });
 
     return (
-      <button
-        className={btnClass}
-        disabled={this.props.disabled}
-        {...this.props}
-      >
+      <button className={btnClass} disabled={this.props.disabled}>
         {this.props.iconname && (
           <Icon
             iconname={this.props.iconname}

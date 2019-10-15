@@ -13,7 +13,7 @@ class AddToCartForm extends React.Component {
     return (
       <div className={componentClassName} {...other}>
         <TextField label='Quantity' type='number' />
-        <Button text='Add to Cart' />
+        <Button text='Add to Cart' className='c-btn--large' />
       </div>
     );
   }

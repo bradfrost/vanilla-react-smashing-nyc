@@ -11,6 +11,7 @@
 .c-image-gallery {
   @include boxStyles();
   max-width: 600px;
+  margin-bottom: 1rem;
 }
 
 .c-image-gallery__main-img {

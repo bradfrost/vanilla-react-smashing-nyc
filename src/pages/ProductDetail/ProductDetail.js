@@ -22,7 +22,6 @@ export class ProductDetail extends Component {
             <ImageGallery />
             <ProductDescription />
             <AddToCartForm />
-
             <Section title='Ratings'>
               <div className='fpo'>Rating details</div>
             </Section>

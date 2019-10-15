@@ -10,11 +10,12 @@
  */
 .c-btn {
   display: flex;
-  background: $color-brand-brown;
+  background: $color-brand-jelly;
   border-radius: $border-radius;
   color: #fff;
   border: 0;
   padding: 1rem;
+  font-weight: $font-weight-bold;
 }
 
 .c-btn--large {

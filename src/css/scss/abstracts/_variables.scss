@@ -45,6 +45,7 @@ $color-brand-blue: #0000ff;
 $color-brand-orange: orange;
 $color-brand-pb: #e5b06f;
 $color-brand-brown: #67391a;
+$color-brand-jelly: #521b82;
 
 /**
  * Neutral Colors
@@ -82,8 +83,10 @@ $color-utility-warning-light: #fffecf;
 /**
  * Font Family
  */
-$font-primary: 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
+$font-primary: 'Corben', 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
 $font-secondary: serif;
+
+$font-weight-bold: 700;
 
 /**
  * Font Sizing

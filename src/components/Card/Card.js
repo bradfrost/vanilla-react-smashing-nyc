@@ -12,10 +12,9 @@ export class Card extends Component {
 
     return (
       <div className={cardClass}>
-        <header className='c-card__header'>
-          <h3 className='c-card__title'>{this.props.title}</h3>
-          <p className='c-card__description'>f{this.props.description}</p>
-        </header>
+        <img src={this.props.src} alt={this.props.alt} />
+        <h3 className='c-card__title'>{this.props.title}</h3>
+        <p className='c-card__description'>f{this.props.description}</p>
         <div className='c-card__body'>{this.props.children}</div>
       </div>
     );

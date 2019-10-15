@@ -13,7 +13,11 @@ export class PrimaryNav extends Component {
                 className='c-primary-nav__item'
                 key={`c-primary-nav__item-${index}`}
               >
-                <a href={navitem.href} onClick={navitem.onClick}>
+                <a
+                  className='c-primary-nav__link'
+                  href={navitem.href}
+                  onClick={navitem.onClick}
+                >
                   {navitem.text}
                 </a>
               </li>

@@ -195,7 +195,7 @@ export class Checkout extends Component {
                     </div>
                   </Stripe>
                   <div className='u-margin-top-large u-margin-bottom-large'>
-                    <span>
+                    <span className='u-margin-right'>
                       <strong>Total</strong>
                     </span>
                     <span>$150.00</span>

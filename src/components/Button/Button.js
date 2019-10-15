@@ -7,7 +7,8 @@ import './Button.scss';
 export class Button extends Component {
   render() {
     const btnClass = classnames('c-btn', this.props.className, {
-      'c-btn--secondary': this.props.issecondary
+      'c-btn--secondary': this.props.issecondary,
+      'c-btn--large': this.props.isLarge
     });
 
     return (

@@ -6,8 +6,7 @@
 \*------------------------------------*/
 
 .c-card {
-  border: 1px solid $color-neutral-gray-50;
-  padding: 1rem;
+  @include boxStyles();
 }
 
 .c-card--dark {

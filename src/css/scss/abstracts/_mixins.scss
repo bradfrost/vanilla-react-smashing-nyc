@@ -1,3 +1,9 @@
 /*------------------------------------*\
     #MIXINS
 \*------------------------------------*/
+
+@mixin boxStyles() {
+  border-radius: $border-radius;
+  background: $color-neutral-white;
+  padding: 1rem;
+}

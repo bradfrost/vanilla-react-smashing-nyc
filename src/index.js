@@ -1,3 +1,4 @@
+export { default as AddToCartForm } from './components/AddToCartForm';;
 export { default as Button } from './components/Button';
 export { default as Card } from './components/Card';
 export { default as CardList } from './components/CardList';
@@ -17,6 +18,7 @@ export { default as OptionList } from './components/OptionList';
 export { default as OrderedList } from './components/OrderedList';
 export { default as PageHeader } from './components/PageHeader';
 export { default as PrimaryNav } from './components/PrimaryNav';
+export { default as ProductDescription } from './components/ProductDescription';;
 export { default as RadioField } from './components/RadioField';
 export { default as Section } from './components/Section';
 export { default as Select } from './components/Select';

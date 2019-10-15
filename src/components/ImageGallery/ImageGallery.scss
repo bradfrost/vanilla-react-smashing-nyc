@@ -1,3 +1,6 @@
+@import '../../css/scss/abstracts/variables';
+@import '../../css/scss/abstracts/mixins';
+
 /*------------------------------------*\
     #IMAGEGALLERY
 \*------------------------------------*/
@@ -6,6 +9,7 @@
  * 1) 
  */
 .c-image-gallery {
+  @include boxStyles();
   max-width: 600px;
 }
 

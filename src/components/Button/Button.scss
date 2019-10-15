@@ -10,10 +10,16 @@
  */
 .c-btn {
   display: flex;
-  background: #333;
+  background: $color-brand-brown;
+  border-radius: $border-radius;
   color: #fff;
   border: 0;
-  padding: $spacing;
+  padding: 1rem;
+}
+
+.c-btn--large {
+  font-size: $font-size-large;
+  padding: 2rem 3rem;
 }
 
 /**

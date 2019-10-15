@@ -187,7 +187,6 @@ export class Checkout extends Component {
               </div>
               <Button text='Place order' />
             </Section>
-            <div className='fpo'>Review order</div>
           </LayoutContainer>
         </main>
         <Footer />

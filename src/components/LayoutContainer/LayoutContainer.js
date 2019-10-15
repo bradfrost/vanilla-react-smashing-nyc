@@ -7,7 +7,9 @@ class LayoutContainer extends React.Component {
   render() {
     const { className, children, variant, align, ...other } = this.props;
 
-    const componentClassName = classnames('l-container', className, {});
+    const componentClassName = classnames('l-container', className, {
+      'l-container--white': this.props.variant == 'white'
+    });
     return (
       <div className={componentClassName} {...other}>
         {children}

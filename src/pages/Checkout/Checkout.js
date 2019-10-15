@@ -12,6 +12,7 @@ import { TextPassage } from '../../components/TextPassage/TextPassage';
 import { RadioField } from '../../components/RadioField/RadioField';
 import { SelectField } from '../../components/SelectField/SelectField';
 import Stripe from '../../components/Stripe/Stripe';
+import LayoutContainer from '../../components/LayoutContainer/LayoutContainer';
 
 export class Checkout extends Component {
   render() {
@@ -20,172 +21,174 @@ export class Checkout extends Component {
         <Header joke='u-margin-bottom-none' />
 
         <main role='main'>
-          <Section title='Billing address'>
-            <Grid variant='2up'>
-              <GridItem>
-                <TextField
-                  name='text-field-1'
-                  type='text'
-                  label='First name'
-                  placeholder='Placeholder'
-                  title='Please enter the proper text into the field.'
-                  fieldNote='This is the field note.'
-                  ariaDescribedBy='text-field'
-                />
-              </GridItem>
-              <GridItem>
-                <TextField
-                  name='text-field-1'
-                  type='text'
-                  label='Last name'
-                  placeholder='Placeholder'
-                  title='Please enter the proper text into the field.'
-                  fieldNote='This is the field note.'
-                  ariaDescribedBy='text-field'
-                />
-              </GridItem>
-              <GridItem>
-                <TextField
-                  name='text-field-1'
-                  type='text'
-                  label='Street address'
-                  placeholder='Placeholder'
-                  title='Please enter the proper text into the field.'
-                  fieldNote='This is the field note.'
-                  ariaDescribedBy='text-field'
-                />
-              </GridItem>
-              <GridItem>
-                <TextField
-                  name='text-field-1'
-                  type='text'
-                  label='City'
-                  placeholder='Placeholder'
-                  title='Please enter the proper text into the field.'
-                  fieldNote='This is the field note.'
-                  ariaDescribedBy='text-field'
-                />
-              </GridItem>
-              <GridItem>
-                <TextField
-                  name='text-field-1'
-                  type='text'
-                  label='State'
-                  placeholder='Placeholder'
-                  title='Please enter the proper text into the field.'
-                  fieldNote='This is the field note.'
-                  ariaDescribedBy='text-field'
-                />
-              </GridItem>
-              <GridItem>
-                <TextField
-                  name='text-field-1'
-                  type='text'
-                  label='Zip code'
-                  placeholder='Placeholder'
-                  title='Please enter the proper text into the field.'
-                  fieldNote='This is the field note.'
-                  ariaDescribedBy='text-field'
-                />
-              </GridItem>
-            </Grid>
-          </Section>
-          <Section title='Shipping method'>
-            <TextPassage className='u-margin-bottom-large'>
-              Below are the shipping methods for your delicious peanut butter
-              and jelly sandwiches.
-            </TextPassage>
-            <RadioField
-              required={true}
-              listItems={[
-                {
-                  id: 'radio-1',
-                  name: 'radioexample',
-                  text: 'Standard shipping',
-                  text: 'Radio 1',
-                  type: 'radio'
-                },
-                {
-                  id: 'radio-2',
-                  name: 'radioexample',
-                  text: 'Premium shipping',
-                  text: 'Radio 2',
-                  type: 'radio'
-                },
-                {
-                  id: 'radio-3',
-                  name: 'radioexample',
-                  text: 'I-need-my-PB-now shipping',
-                  text: 'Radio 3',
-                  type: 'radio'
-                }
-              ]}
-              fieldNote='This is a required field'
-            />
-          </Section>
-          <Section title='Payment details'>
-            <TextPassage className='u-margin-bottom-large'>
-              Please enter your payment information to receive your creamy,
-              amazing PB and Js
-            </TextPassage>
-            <Grid variant='2up'>
-              <SelectField label='Credit card number' required />
-              <GridItem>
-                <TextField
-                  name='text-field-1'
-                  type='text'
-                  label='Credit card number'
-                  placeholder='Placeholder'
-                  title='Please enter the proper text into the field.'
-                  fieldNote='This is the field note.'
-                  ariaDescribedBy='text-field'
-                />
-              </GridItem>
-              <GridItem>
-                <TextField
-                  name='text-field-1'
-                  type='text'
-                  label='Expiration date'
-                  placeholder='Placeholder'
-                  title='Please enter the proper text into the field.'
-                  fieldNote='This is the field note.'
-                  ariaDescribedBy='text-field'
-                />
-              </GridItem>
-              <GridItem>
-                <TextField
-                  name='text-field-1'
-                  type='text'
-                  label='CVV'
-                  placeholder='Placeholder'
-                  title='Please enter the proper text into the field.'
-                  fieldNote='This is the field note.'
-                  ariaDescribedBy='text-field'
-                />
-              </GridItem>
-            </Grid>
-          </Section>
-          <Section title='Review your order'>
-            <Stripe>
-              <div className='c-stripe__left'>
-                <img src='https://via.placeholder.com/150x100' />
-              </div>
-              <div className='c-stripe__right'>
-                <div>Delicious PB and J Sandwich</div>
-                <div>
-                  <strong>$100.00</strong>
+          <LayoutContainer variant='white'>
+            <Section title='Billing address'>
+              <Grid variant='2up'>
+                <GridItem>
+                  <TextField
+                    name='text-field-1'
+                    type='text'
+                    label='First name'
+                    placeholder='Placeholder'
+                    title='Please enter the proper text into the field.'
+                    fieldNote='This is the field note.'
+                    ariaDescribedBy='text-field'
+                  />
+                </GridItem>
+                <GridItem>
+                  <TextField
+                    name='text-field-1'
+                    type='text'
+                    label='Last name'
+                    placeholder='Placeholder'
+                    title='Please enter the proper text into the field.'
+                    fieldNote='This is the field note.'
+                    ariaDescribedBy='text-field'
+                  />
+                </GridItem>
+                <GridItem>
+                  <TextField
+                    name='text-field-1'
+                    type='text'
+                    label='Street address'
+                    placeholder='Placeholder'
+                    title='Please enter the proper text into the field.'
+                    fieldNote='This is the field note.'
+                    ariaDescribedBy='text-field'
+                  />
+                </GridItem>
+                <GridItem>
+                  <TextField
+                    name='text-field-1'
+                    type='text'
+                    label='City'
+                    placeholder='Placeholder'
+                    title='Please enter the proper text into the field.'
+                    fieldNote='This is the field note.'
+                    ariaDescribedBy='text-field'
+                  />
+                </GridItem>
+                <GridItem>
+                  <TextField
+                    name='text-field-1'
+                    type='text'
+                    label='State'
+                    placeholder='Placeholder'
+                    title='Please enter the proper text into the field.'
+                    fieldNote='This is the field note.'
+                    ariaDescribedBy='text-field'
+                  />
+                </GridItem>
+                <GridItem>
+                  <TextField
+                    name='text-field-1'
+                    type='text'
+                    label='Zip code'
+                    placeholder='Placeholder'
+                    title='Please enter the proper text into the field.'
+                    fieldNote='This is the field note.'
+                    ariaDescribedBy='text-field'
+                  />
+                </GridItem>
+              </Grid>
+            </Section>
+            <Section title='Shipping method'>
+              <TextPassage className='u-margin-bottom-large'>
+                Below are the shipping methods for your delicious peanut butter
+                and jelly sandwiches.
+              </TextPassage>
+              <RadioField
+                required={true}
+                listItems={[
+                  {
+                    id: 'radio-1',
+                    name: 'radioexample',
+                    text: 'Standard shipping',
+                    text: 'Radio 1',
+                    type: 'radio'
+                  },
+                  {
+                    id: 'radio-2',
+                    name: 'radioexample',
+                    text: 'Premium shipping',
+                    text: 'Radio 2',
+                    type: 'radio'
+                  },
+                  {
+                    id: 'radio-3',
+                    name: 'radioexample',
+                    text: 'I-need-my-PB-now shipping',
+                    text: 'Radio 3',
+                    type: 'radio'
+                  }
+                ]}
+                fieldNote='This is a required field'
+              />
+            </Section>
+            <Section title='Payment details'>
+              <TextPassage className='u-margin-bottom-large'>
+                Please enter your payment information to receive your creamy,
+                amazing PB and Js
+              </TextPassage>
+              <Grid variant='2up'>
+                <SelectField label='Credit card number' required />
+                <GridItem>
+                  <TextField
+                    name='text-field-1'
+                    type='text'
+                    label='Credit card number'
+                    placeholder='Placeholder'
+                    title='Please enter the proper text into the field.'
+                    fieldNote='This is the field note.'
+                    ariaDescribedBy='text-field'
+                  />
+                </GridItem>
+                <GridItem>
+                  <TextField
+                    name='text-field-1'
+                    type='text'
+                    label='Expiration date'
+                    placeholder='Placeholder'
+                    title='Please enter the proper text into the field.'
+                    fieldNote='This is the field note.'
+                    ariaDescribedBy='text-field'
+                  />
+                </GridItem>
+                <GridItem>
+                  <TextField
+                    name='text-field-1'
+                    type='text'
+                    label='CVV'
+                    placeholder='Placeholder'
+                    title='Please enter the proper text into the field.'
+                    fieldNote='This is the field note.'
+                    ariaDescribedBy='text-field'
+                  />
+                </GridItem>
+              </Grid>
+            </Section>
+            <Section title='Review your order'>
+              <Stripe>
+                <div className='c-stripe__left'>
+                  <img src='https://via.placeholder.com/150x100' />
                 </div>
+                <div className='c-stripe__right'>
+                  <div>Delicious PB and J Sandwich</div>
+                  <div>
+                    <strong>$100.00</strong>
+                  </div>
+                </div>
+              </Stripe>
+              <div className='u-margin-top-large u-margin-bottom-large'>
+                <span>
+                  <strong>Total</strong>
+                </span>
+                <span>$150.00</span>
               </div>
-            </Stripe>
-            <div className='u-margin-top-large u-margin-bottom-large'>
-              <span>
-                <strong>Total</strong>
-              </span>
-              <span>$150.00</span>
-            </div>
-            <Button text='Place order' />
-          </Section>
-          <div className='fpo'>Review order</div>
+              <Button text='Place order' />
+            </Section>
+            <div className='fpo'>Review order</div>
+          </LayoutContainer>
         </main>
         <Footer />
       </React.Fragment>

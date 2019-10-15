@@ -109,21 +109,18 @@ export class Checkout extends Component {
                         id: 'radio-1',
                         name: 'radioexample',
                         text: 'Standard shipping',
-                        text: 'Radio 1',
                         type: 'radio'
                       },
                       {
                         id: 'radio-2',
                         name: 'radioexample',
                         text: 'Premium shipping',
-                        text: 'Radio 2',
                         type: 'radio'
                       },
                       {
                         id: 'radio-3',
                         name: 'radioexample',
                         text: 'I-need-my-PB-now shipping',
-                        text: 'Radio 3',
                         type: 'radio'
                       }
                     ]}
@@ -175,12 +172,23 @@ export class Checkout extends Component {
               </LayoutSidebarMain>
               <LayoutSidebarSidebar>
                 <Section sticky title='Review your order'>
-                  <Stripe>
+                  <Stripe className='u-margin-bottom'>
                     <div className='c-stripe__left'>
                       <img src='https://via.placeholder.com/150x100' />
                     </div>
                     <div className='c-stripe__right'>
                       <div>Delicious PB and J Sandwich</div>
+                      <div>
+                        <strong>$100.00</strong>
+                      </div>
+                    </div>
+                  </Stripe>
+                  <Stripe>
+                    <div className='c-stripe__left'>
+                      <img src='https://via.placeholder.com/150x100' />
+                    </div>
+                    <div className='c-stripe__right'>
+                      <div>Another Delicious PB and J Sandwich</div>
                       <div>
                         <strong>$100.00</strong>
                       </div>

@@ -7,4 +7,20 @@
  */
 .c-stripe {
   display: flex;
+  padding: 1rem;
+  background: #fff;
+}
+
+/**
+ * 1) 
+ */
+.c-stripe__left {
+  margin-right: 1rem;
+}
+
+/**
+ * 1) 
+ */
+.c-stripe__right {
+  margin-left: auto;
 }

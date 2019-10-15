@@ -11,6 +11,7 @@ import { Footer } from '../../components/Footer/Footer';
 import { TextPassage } from '../../components/TextPassage/TextPassage';
 import { RadioField } from '../../components/RadioField/RadioField';
 import { SelectField } from '../../components/SelectField/SelectField';
+import Stripe from '../../components/Stripe/Stripe';
 
 export class Checkout extends Component {
   render() {
@@ -100,18 +101,21 @@ export class Checkout extends Component {
                 {
                   id: 'radio-1',
                   name: 'radioexample',
+                  text: 'Standard shipping',
                   text: 'Radio 1',
                   type: 'radio'
                 },
                 {
                   id: 'radio-2',
                   name: 'radioexample',
+                  text: 'Premium shipping',
                   text: 'Radio 2',
                   type: 'radio'
                 },
                 {
                   id: 'radio-3',
                   name: 'radioexample',
+                  text: 'I-need-my-PB-now shipping',
                   text: 'Radio 3',
                   type: 'radio'
                 }
@@ -120,7 +124,7 @@ export class Checkout extends Component {
             />
           </Section>
           <Section title='Payment details'>
-            <TextPassage>
+            <TextPassage className='u-margin-bottom-large'>
               Please enter your payment information to receive your creamy,
               amazing PB and Js
             </TextPassage>
@@ -162,8 +166,23 @@ export class Checkout extends Component {
             </Grid>
           </Section>
           <Section title='Review your order'>
-            <div className='fpo'>Stripe list</div>
-            <div className='fpo'>Total</div>
+            <Stripe>
+              <div className='c-stripe__left'>
+                <img src='https://via.placeholder.com/150x100' />
+              </div>
+              <div className='c-stripe__right'>
+                <div>Delicious PB and J Sandwich</div>
+                <div>
+                  <strong>$100.00</strong>
+                </div>
+              </div>
+            </Stripe>
+            <div className='u-margin-top-large u-margin-bottom-large'>
+              <span>
+                <strong>Total</strong>
+              </span>
+              <span>$150.00</span>
+            </div>
             <Button text='Place order' />
           </Section>
           <div className='fpo'>Review order</div>

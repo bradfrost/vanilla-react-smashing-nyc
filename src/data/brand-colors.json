@@ -9,6 +9,16 @@
       "name": "$color-brand-orange",
       "value": "orange",
       "comment": ""
+    },
+    {
+      "name": "$color-brand-pb",
+      "value": "#e5b06f",
+      "comment": ""
+    },
+    {
+      "name": "$color-brand-brown",
+      "value": "#67391a",
+      "comment": ""
     }
   ],
   "meta": {

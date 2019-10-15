@@ -9,6 +9,7 @@ export { default as Header } from './components/Header';
 export { default as Hero } from './components/Hero';
 export { default as Icon } from './components/Icon';
 export { default as IconGrid } from './components/IconGrid';
+export { default as ImageGallery } from './components/ImageGallery';;
 export { default as InlineCheckbox } from './components/InlineCheckbox';
 export { default as Label } from './components/Label';
 export { default as Logo } from './components/Logo';

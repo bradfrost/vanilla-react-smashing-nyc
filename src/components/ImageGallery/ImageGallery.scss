@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    #IMAGEGALLERY
+\*------------------------------------*/
+
+/**
+ * 1) 
+ */
+.c-image-gallery {
+  max-width: 600px;
+}
+
+.c-image-gallery__main-img {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.c-image-gallery__thumb-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}

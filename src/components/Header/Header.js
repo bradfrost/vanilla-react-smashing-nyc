@@ -9,11 +9,10 @@ import './Header.scss';
 
 export class Header extends Component {
   render() {
-    const { className } = this.props;
-    const componentClassName = classnames('c-header', this.props.joke, {});
+    const componentClassName = classnames('c-header', this.props.className, {});
 
     return (
-      <header className={componentClassName} {...this.props}>
+      <header className={componentClassName}>
         <LayoutContainer className='c-header__inner'>
           <Logo href='/' />
 
